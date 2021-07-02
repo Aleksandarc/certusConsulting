@@ -11,6 +11,7 @@
   --primary-dark: #222;
   --primary-regular: #333;
   --primary-light: #f1f1f1;
+  --accent-color: #77a5ff;
   --usluge_box_shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
   --font-thin: 300;
   --font-regular: 400;
@@ -156,11 +157,12 @@
   padding: 5% 0% 0% 0%;
 }
 
-.usluge > h1 {
+.mainTitle {
   margin: 0 15% 2rem 15%;
   font-size: 3rem;
   font-weight: var(--font-bold);
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .usluga_savetovanje {
@@ -424,4 +426,74 @@ table {
 .tmpTable {
   width: 70%;
   margin: 5% auto;
+}
+
+/* ------------- Nas tim styles -------------  */
+.timTitle {
+  margin: 2% 15% 2% 15%;
+}
+
+.timInfo {
+  margin: 2% 15% 5% 15%;
+  padding: 2%;
+  border-radius: 2rem;
+  background-color: var(--primary-light);
+  overflow: hidden;
+}
+
+.timLeft {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 0 5% 5% 0;
+}
+.timIme {
+  font-size: 1.6rem;
+  color: var(--primary-darkest);
+  margin-bottom: 0.2rem;
+  font-weight: var(--font-bold);
+  padding: 0 0 0 4%;
+  position: relative;
+}
+
+.timIme::before {
+  content: '';
+  position: absolute;
+  width: 0.4rem;
+  height: 100%;
+  background-color: var(--accent-color);
+  top: 0;
+  left: 0;
+}
+
+.timPozicija {
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.2rem;
+  font-weight: var(--font-regular);
+  font-style: italic;
+}
+
+.timEmail {
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-regular);
+  color: var(--primary-regular);
+}
+
+.timText {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--primary-regular);
+  font-weight: var(--font-thin);
+  text-align: justify;
+}
+
+.timSlika {
+  object-fit: cover;
+  border-radius: 1rem;
+  aspect-ratio: 1/1;
+  object-position: 50% 25%;
+  margin: 0 0 5% 0;
+  max-height: 20vh;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(32, 32, 32, 0.2);
 }

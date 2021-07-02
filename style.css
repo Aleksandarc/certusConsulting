@@ -207,6 +207,7 @@
 
 .savetovanje_right img {
   object-fit: cover;
+  width: 100%;
 }
 
 .usluga_mena {
@@ -223,8 +224,7 @@
 .usluga_poreska img {
   position: absolute;
   right: 15%;
-  top: -50%;
-  transform: translate(0 50%);
+  top: -75%;
   width: 25%;
   border-radius: 2rem;
   box-shadow: var(--usluge_box_shadow);
@@ -417,6 +417,8 @@ th,
 td {
   border: 1px solid black;
   font-size: 1.5rem;
+  text-align: center;
+  padding: 0.2rem;
 }
 
 table {
@@ -433,67 +435,92 @@ table {
   margin: 2% 15% 2% 15%;
 }
 
-.timInfo {
+.timBox {
   margin: 2% 15% 5% 15%;
+  background-color: #fafafa;
   padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2%;
   border-radius: 2rem;
-  background-color: var(--primary-light);
-  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 0 0.2rem var(--primary-color);
 }
 
 .timLeft {
   display: flex;
   flex-direction: column;
-  float: left;
-  margin: 0 5% 5% 0;
-}
-.timIme {
-  font-size: 1.6rem;
-  color: var(--primary-darkest);
-  margin-bottom: 0.2rem;
-  font-weight: var(--font-bold);
-  padding: 0 0 0 4%;
-  position: relative;
 }
 
-.timIme::before {
-  content: '';
-  position: absolute;
-  width: 0.4rem;
-  height: 100%;
-  background-color: var(--accent-color);
-  top: 0;
-  left: 0;
+.timImg {
+  aspect-ratio: 1.5/2;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin: 0 5% 1rem 0;
+  position: relative;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+.timIme {
+  font-size: 1.5rem;
+  color: var(--primary-darkest);
+  font-weight: var(--font-bold);
+  margin: 0 0 0.5rem 0;
 }
 
 .timPozicija {
   font-size: 1.2rem;
-  color: var(--primary-dark);
-  margin-bottom: 0.2rem;
-  font-weight: var(--font-regular);
   font-style: italic;
+  font-weight: var(--font-regular);
 }
 
 .timEmail {
-  margin-bottom: 0.5rem;
   font-weight: var(--font-regular);
-  color: var(--primary-regular);
+  width: max-content;
 }
 
-.timText {
-  font-size: 1.1rem;
+.timInfo {
+  font-size: 1.2rem;
+  color: var(--primary-regular);
+  font-weight: var(--font-regular);
   line-height: 1.5;
-  color: var(--primary-regular);
-  font-weight: var(--font-thin);
-  text-align: justify;
+  white-space: wrap;
+  word-wrap: break-word;
 }
 
-.timSlika {
-  object-fit: cover;
+/* ------------- Reference styles -------------  */
+.referenceTitle {
+  margin: 2% 15% 2% 15%;
+}
+
+.listOpcije {
+  margin: 2% 15%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  width: 50%;
+}
+
+.listOpcije button {
+  padding: 0.6rem;
+  border: none;
+  background-color: var(--primary-light);
   border-radius: 1rem;
-  aspect-ratio: 1/1;
-  object-position: 50% 25%;
-  margin: 0 0 5% 0;
-  max-height: 20vh;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(32, 32, 32, 0.2);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: var(--font-bold);
+  transition: background-color 0.1s ease-in-out;
+  font-size: 0.8rem;
+}
+
+.listOpcije button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.listaReferenca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-gap: 1rem;
+  margin: 0 15%;
+  overflow: hidden;
 }

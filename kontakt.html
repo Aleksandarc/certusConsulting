@@ -32,10 +32,62 @@
         <a href=""><img src="./media/eng.svg" alt="UK flag" /></a>
       </div>
     </nav>
-    <h1>OVO ISPOD JE TRENUTNO SAMO SLIKA TRENUTNOG DIZAJNA</h1>
-    <img src="./media/kontakt.jpg" alt="" />
+    <div class="kontaktContainer">
+      <img src="./media/tmpMapa.jpg" alt="Certus Lokacija" />
+      <div class="kontaktBox">
+        <div class="kontaktEmail">
+          <h1>Želite da poslujete sa nama?</h1>
+          <h2 class="mainTitle kontaktTitle">Pošaljite nam mail</h2>
+          <form action="#" id="kontaktForma" method="get" class="kontaktForma">
+            <div class="kontaktFormaIme kontaktInput">
+              <label for="ime"
+                >Vaše ime: <input type="text" name="ime"
+              /></label>
+            </div>
+            <div class="kontaktFormaEmail kontaktInput">
+              <label for="email"
+                >Vaš email: <input type="text" name="prezime"
+              /></label>
+            </div>
+            <div class="kontaktFormaPoruka kontaktInput">
+              <label for="poruka"
+                >Vaša poruka:
+                <textarea
+                  name="poruka"
+                  id="kontaktPoruka"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+            </div>
+            <button type="submit" form="kontaktForma">Pošalji</button>
+          </form>
+        </div>
+        <div class="kontaktInfo">
+          <div class="kontaktInfoText">
+            <p class="kontaktAdresa">Kneza Miloša 16. Beograd.</p>
+            <div class="kontaktDrzava">
+              <p class="kontaktDrzava">Srbija</p>
+            </div>
+            <p class="kontaktTelefon">
+              Telefon: <strong>+3811 333 4801</strong>
+            </p>
+            <p class="kontaktEmailAdresa">Email: office@certusconsulting.rs</p>
+            <p class="kontaktWeb">Web: www.certusconsulting.rs</p>
+          </div>
+          <img
+            src="./media/undraw_new_message_2gfk.svg"
+            alt="Ilustracija balona i slanja poruke"
+            class="kontaktImg"
+          />
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="main_footer">
+        <h2 class="footer_right">
+          &#169;<strong class="certusCon">2021 Certus consulting</strong>
+        </h2>
         <ul class="footer_left">
           <a href="./index.html"><li>Naslovna</li></a>
           <a href="./tim.html"><li>Naš tim</li></a>
@@ -43,9 +95,6 @@
           <a href="./onama.html"><li>O nama</li></a>
           <a href="./kontakt.html"><li>Kontakt</li></a>
         </ul>
-        <h2 class="footer_right">
-          &#169;<strong class="certusCon">Certus consulting</strong>
-        </h2>
       </div>
       <ul class="footer_kontakt">
         <li class="kontakt_email">Certus consulting</li>

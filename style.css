@@ -104,18 +104,17 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.landing_left {
+.landingLeft {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5%;
 }
 
 .landing_logo {
   width: 80%;
 }
 
-.landing_left h2 {
+.landingLeft h2 {
   margin: 1rem 0 2rem 0;
   font-size: 2rem;
   font-weight: var(--font-thin);
@@ -136,7 +135,7 @@
   color: var(--primary-light);
 }
 
-.landing_right {
+.landingRight {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +143,7 @@
   padding: 0;
 }
 
-.landing_right img {
+.landingRight img {
   width: 100%;
   min-height: 100vh;
   object-fit: cover;
@@ -159,7 +158,7 @@
 }
 
 .mainTitle {
-  margin: 0 15% 2rem 15%;
+  padding: 0 15% 2rem 15%;
   font-size: 3rem;
   font-weight: var(--font-bold);
   color: var(--primary-color);
@@ -433,7 +432,7 @@ table {
 
 /* ------------- Nas tim styles -------------  */
 .timTitle {
-  margin: 2% 15% 2% 15%;
+  padding: 2% 15% 2% 15%;
 }
 
 .timBox {
@@ -490,7 +489,7 @@ table {
 
 /* ------------- Reference styles -------------  */
 .referenceTitle {
-  margin: 2% 15% 2% 15%;
+  margin: 2% 0 2% 0;
 }
 
 .listOpcije {
@@ -522,7 +521,7 @@ table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   grid-gap: 1rem;
-  margin: 0 15%;
+  padding: 0 15%;
   overflow: hidden;
 }
 
@@ -651,7 +650,7 @@ table {
 
 /* ------------- O nama -------------  */
 .oNamaTitle {
-  margin: 5% 15% 4% 15%;
+  margin: 5% 0 4% 0;
 }
 .oNamaIntro {
   width: 100%;
@@ -757,4 +756,179 @@ table {
   font-size: 1.5rem;
   line-height: 1.5;
   border-radius: 0.5rem;
+}
+
+/* ------------- Podesavanja za manje ekrane -------------  */
+@media only screen and (max-width: 1400px) {
+  /* Podesava footer i navigaciju da budu sire za manje ekrane */
+  .mainNav,
+  footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* Podesava sve sa landing stranice da bude sire */
+  .landing_home,
+  .mainTitle,
+  .usluga_savetovanje,
+  .usluga_mena,
+  .usluga_poreska,
+  .usluga_makro,
+  .usluga_zdravlje,
+  .landing_info {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* Podesava nas tim stranicu */
+
+  .timBox {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* Podesava reference */
+  .listOpcije {
+    margin: 2% 10%;
+  }
+
+  .listaReferenca {
+    padding: 0 10%;
+  }
+
+  /* Podesava o nama */
+  .oNamaIntro {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .oNamaMain {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .oCertusu {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /* Podesava kontakt */
+  .kontaktContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  /* Podesava footer i navigaciju da budu sire za manje ekrane */
+  .mainNav,
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Podesava sve sa landing stranice da bude sire */
+  .landing_home,
+  .mainTitle,
+  .usluga_savetovanje,
+  .usluga_mena,
+  .usluga_poreska,
+  .usluga_makro,
+  .usluga_zdravlje,
+  .landing_info {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .timBox {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .listOpcije {
+    margin: 2% 5%;
+  }
+
+  .listaReferenca {
+    padding: 0 5%;
+  }
+
+  /* Podesava o nama */
+  .oNamaIntro {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .oNamaMain {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .oCertusu {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* Podesava kontakt */
+  .kontaktContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* Podesava footer i navigaciju da budu sire za manje ekrane */
+  .mainNav,
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Podesava sve sa landing stranice da bude sire */
+  .landing_home,
+  .mainTitle,
+  .usluga_savetovanje,
+  .usluga_mena,
+  .usluga_poreska,
+  .usluga_makro,
+  .usluga_zdravlje,
+  .landing_info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .timBox {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .listOpcije {
+    margin: 2% 2rem;
+  }
+
+  .listaReferenca {
+    padding: 0 2rem;
+  }
+
+  /* Podesava o nama */
+  .oNamaIntro {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .oNamaMain {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .oCertusu {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  /* Podesava kontakt */
+  .kontaktContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }

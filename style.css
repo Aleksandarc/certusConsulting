@@ -447,7 +447,6 @@ table {
   grid-template-columns: 1fr 4fr;
   gap: 2%;
   border-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem 0 0.2rem var(--primary-color);
 }
 
 .timLeft {
@@ -658,13 +657,10 @@ table {
   margin: 5% 0 4% 0;
 }
 .oNamaIntro {
-  width: 100%;
   margin: 2% 15%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .oNamaIntroText {
@@ -672,6 +668,8 @@ table {
   line-height: 1.5;
   color: var(--primary-regular);
   font-weight: var(--font-regular);
+  margin-right: 2rem;
+  width: 70%;
 }
 
 .oNamaIntroText strong,
@@ -687,7 +685,8 @@ table {
   padding: 1rem 1rem;
   color: #f1f1f1;
   box-shadow: 0.4rem 0.4rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
-  max-width: 20vw;
+  width: auto;
+  height: 100%;
 }
 
 .oNamaDownload h2 {
@@ -829,6 +828,9 @@ table {
 
 @media only screen and (max-width: 1050px) {
   /* Podesava footer i navigaciju da budu sire za manje ekrane */
+  * {
+    font-size: 14px;
+  }
   .mainNav,
   footer {
     padding-left: 5%;
@@ -890,6 +892,9 @@ table {
 
 @media only screen and (max-width: 992px) {
   /* Podesava footer i navigaciju da budu sire za manje ekrane */
+  * {
+    font-size: 13px;
+  }
   .mainNav,
   footer {
     padding-left: 2rem;
@@ -936,6 +941,23 @@ table {
   .oCertusu {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .oNamaIntro {
+    flex-direction: column;
+  }
+
+  .oNamaIntroText {
+    width: 100%;
+    margin: 0 0 2% 0;
+  }
+
+  .oNamaDownload {
+    width: 100%;
+  }
+
+  .oNamaDownload button {
+    padding: 0.5rem 2rem;
   }
 
   /* Podesava kontakt */

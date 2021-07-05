@@ -500,7 +500,7 @@ table {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-  width: 50%;
+  width: 80%;
 }
 
 .listOpcije button {
@@ -522,10 +522,19 @@ table {
 
 .listaReferenca {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 1rem;
   padding: 0 15%;
   overflow: hidden;
+}
+
+.referenceItem {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------- KONTAKT -------------  */
@@ -954,6 +963,7 @@ table {
 
   .oNamaDownload {
     width: 100%;
+    box-shadow: none;
   }
 
   .oNamaDownload button {
@@ -991,6 +1001,10 @@ table {
 
 /* Mobile CSS */
 @media only screen and (max-width: 768px) {
+  /* Reference */
+  .listaReferenca {
+    justify-content: center;
+  }
   /* Kontakt */
   .kontaktContainer img {
     height: 50vh;

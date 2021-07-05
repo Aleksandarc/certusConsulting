@@ -26,6 +26,10 @@
   text-transform: uppercase;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* ------------- NAVBAR -------------  */
 
 .mainNav {
@@ -954,6 +958,12 @@ table {
 
   .kontaktImg {
     max-height: 40vh;
+  }
+  /* Podesava footer */
+  .main_footer {
+    flex-direction: column;
+    padding: 2% 0;
+    align-items: flex-start;
   }
 }
 

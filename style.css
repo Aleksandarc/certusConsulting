@@ -561,6 +561,7 @@ table {
   margin: 0.2rem 0 2rem 0;
   font-weight: var(--font-semibold);
   color: #fff;
+  padding: 0 0;
 }
 
 .kontaktForma {
@@ -817,6 +818,9 @@ table {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .kontaktTitle {
+    padding: 0 0;
+  }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -874,6 +878,10 @@ table {
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .kontaktTitle {
+    padding: 0 0;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -930,5 +938,29 @@ table {
   .kontaktContainer {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .kontaktBox {
+    grid-template-columns: auto;
+  }
+  .kontaktEmail {
+    margin-right: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .kontaktTitle {
+    padding: 0 0;
+  }
+
+  .kontaktImg {
+    max-height: 40vh;
+  }
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 768px) {
+  /* Kontakt */
+  .kontaktContainer img {
+    height: 50vh;
   }
 }

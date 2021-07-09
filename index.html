@@ -45,7 +45,21 @@
         <button class="landing_CTA">Kontakt</button>
       </div>
       <div class="landingRight">
-        <img src="./media/landing_1.jpg" alt="Landing Image" />
+        <picture>
+          <source srcset="./media/landing.jpg" media="(min-width: 1400px)" />
+          <source
+            srcset="./media/tablet/landing_tablet.jpg"
+            media="(min-width: 769px)"
+          />
+          <source
+            srcset="./media/mobile/landing_mobile.jpg"
+            media="(min-width: 577px)"
+          />
+          <img
+            srcset="./media/mobile/landing_mobile.jpg"
+            alt="Slika landing stranice"
+          />
+        </picture>
       </div>
     </div>
 

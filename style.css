@@ -214,7 +214,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0% 15% 2% 15%;
-  margin-bottom: 5%;
 }
 
 .usluge h2 {
@@ -1109,8 +1108,9 @@ table {
     box-shadow: none;
   }
 
-  .oNamaDownload button {
-    padding: 0.5rem 2rem;
+  .preuzmiPdf {
+    padding: 2rem;
+    font-size: 1.5rem;
   }
 
   /* Podesava kontakt */
